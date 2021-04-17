@@ -1,9 +1,9 @@
 # BindableUnityUI
 A simple implementation of two-way binding between unity UI controls and data objects. If you are familiar with binding in WPF or Angular, it's the same idea.
 
-If you are not, then binding allows automatic synchronization between UI control content and underlying data object properties. Basically almost all the "glue" code you typically write between the game and UI, eg to handle a multitide of control events from one direction, and to set UI control values (eg set textfield text) from the other, is no longer needed. The binding system handles all the glue for you, hopefully saving time, reducing the chance of bugs and meaning cleaner/less code. Your game code can focus instead on reading and updating property values without knowing about how the UI itself works. 
+If you are not, then binding allows automatic synchronization between UI control content and underlying data object properties. The advantage is that almost all the "glue" code you typically write between the game and UI, eg to handle a multitide of control events from one direction, and to set UI control values (eg set textfield text) from the other, is no longer needed. The binding system handles all the glue for you, hopefully saving time and producing cleaner/less code (and less bugs). Your game code can focus instead on reading and updating property values without knowing about how the UI itself works.
 
-This is not production code, it is not even alpha, it is experimental containing known bugs, non-ideal API, lacking documentation, missing features, etc. Take it as a rough example of how binding could work if you wanted to implement such a system yourself.
+This is not production code, it is not even alpha, it is experimental/demonstrative, containing known bugs, non-ideal API, lacking documentation, missing features, etc. Take it as a rough example of how binding could work if you want to implement such a system yourself.
 
 Usage:
 First you define a data object containing game settings that use ObservableProperty<T> instead of regular C# types:
