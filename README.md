@@ -5,7 +5,8 @@ If you are not, then binding allows automatic synchronization between UI control
 
 This is not production code, it is not even alpha, it is experimental containing known bugs, non-ideal API, lacking documentation, missing features, etc. Take it as a rough example of how binding could work if you wanted to implement such a system yourself.
 
-The implementation here is used as follows. You define a data object containing game settings that use ObservableProperty<T> instead of regular C# types:
+Usage:
+First you define a data object containing game settings that use ObservableProperty<T> instead of regular C# types:
 
     class GameSettings
     {
