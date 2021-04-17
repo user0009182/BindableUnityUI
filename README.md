@@ -6,14 +6,15 @@ If you are not, then binding allows automatic synchronization between UI control
 This is not production code, it is not even alpha, it is experimental containing known bugs, non-ideal API, lacking documentation, missing features, etc. Take it as a rough example of how binding could work if you wanted to implement such a system yourself.
 
 The implementation here is used as follows. You define a data object containing game settings that use ObservableProperty<T> instead of regular C# types:
+
     class GameSettings
     {
-      internal ObservableProperty<int> MusicVolume = new ObservableProperty<int>(0, 0, 50); //int in range 0-50 with start value 0
-      internal ObservableProperty<int> EffectVolume = new ObservableProperty<int>(0, 0, 50);
-      internal ObservableProperty<int> VoiceVolume = new ObservableProperty<int>(0, 0, 50);
-      internal ObservableProperty<string> AudioDevice = new ObservableProperty<string>("Option2", new string[] { "Option1", "Option2", "Option3", "Option4" });
-      internal ObservableProperty<bool> UseVsync = new ObservableProperty<bool>(false);
-      internal ObservableProperty<string> Text = new ObservableProperty<string>("aaa");
+        internal ObservableProperty<int> MusicVolume = new ObservableProperty<int>(0, 0, 50); //int in range 0-50 with start value 0
+        internal ObservableProperty<int> EffectVolume = new ObservableProperty<int>(0, 0, 50);
+        internal ObservableProperty<int> VoiceVolume = new ObservableProperty<int>(0, 0, 50);
+        internal ObservableProperty<string> AudioDevice = new ObservableProperty<string>("Option2", new string[] { "Option1", "Option2", "Option3", "Option4" });
+        internal ObservableProperty<bool> UseVsync = new ObservableProperty<bool>(false);
+        internal ObservableProperty<string> Text = new ObservableProperty<string>("aaa");
     }
 
 Then you can bind UI elements to any of these properties:
