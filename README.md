@@ -33,6 +33,7 @@ Synchronization is then automatic. The result of the above is that:
   * the uiMusicVolumeLabel text is automatically updated
 
 Another example, given the earlier definition of gameSettings.AudioDevice:
+
     uiDropdown.BindTo(gameSettings.AudioDevice);
     
 The result is that:
