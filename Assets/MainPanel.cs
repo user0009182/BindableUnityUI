@@ -15,10 +15,8 @@ class AudioSettings
     internal ObservableProperty<int> MusicVolume = new ObservableProperty<int>(0, 0, 50);
     internal ObservableProperty<int> EffectVolume = new ObservableProperty<int>(0, 0, 50);
     internal ObservableProperty<int> VoiceVolume = new ObservableProperty<int>(0, 0, 50);
-    internal ObservableProperty<string> AudioDevice = new ObservableProperty<string>("Aaa", new string[] { "Aaa", "Bbb", "Ccc", "Ddd" });
+    internal ObservableProperty<string> AudioDevice = new ObservableProperty<string>("Option2", new string[] { "Option1", "Option2", "Option3", "Option4" });
     internal ObservableProperty<bool> UseVsync = new ObservableProperty<bool>(false);
-
-
     internal ObservableProperty<string> Text = new ObservableProperty<string>("aaa");
 }
 
